@@ -19,3 +19,13 @@ Route::post('/users/login', [UserController::class, 'logins']);
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/demo/page1', [LayoutController::class, 'page1']);
+Route::get('demo/page2', [LayoutController::class, 'page2']);
+Route::get('demo/page3', [LayoutController::class, ' page3']);
+
+Route::get('/index', [OctopusMasterController::class, 'index']);
+Route::get('/list', [OctopusMasterController::class, 'list']);
+Route::get('/form', [OctopusMasterController::class, 'form']);
+Route::get('/calendar', [OctopusMasterController::class, 'calendar']);
+Route::get('/uiElementsModals', [OctopusMasterController::class, 'uiElementsModals']);
